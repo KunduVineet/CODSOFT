@@ -17,7 +17,7 @@ public class DBHelper extends SQLiteOpenHelper {
 
     @Override
     public void onCreate(SQLiteDatabase sqLiteDatabase) {
-        String CREATE_TABLE_QUERY = "CREATE TABLE register(id INTEGER PRIMARY KEY AUTOINCREMENT, name TEXT, email TEXT, password TEXT, gender TEXT)";
+        String CREATE_TABLE_QUERY = "CREATE TABLE register1(id INTEGER PRIMARY KEY AUTOINCREMENT, name TEXT, email TEXT, password TEXT, gender TEXT)";
         sqLiteDatabase.execSQL(CREATE_TABLE_QUERY);
     }
 
@@ -35,7 +35,7 @@ public class DBHelper extends SQLiteOpenHelper {
         contentValues.put("password",password);
         contentValues.put("gender",gender);
 
-        long l  = sqLiteDatabase.insert("register",null,contentValues);
+        long l  = sqLiteDatabase.insert("register1",null,contentValues);
         sqLiteDatabase.close();
 
         return l > 0;
