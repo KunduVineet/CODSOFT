@@ -1,7 +1,9 @@
 package com.teeniv.sql_database;
 
+import android.annotation.SuppressLint;
 import android.content.ContentValues;
 import android.content.Context;
+import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
@@ -39,5 +41,21 @@ public class DBHelper extends SQLiteOpenHelper {
         sqLiteDatabase.close();
 
         return l > 0;
+    }
+
+    boolean loggedin;
+    @SuppressLint("Recycle")
+    public boolean Login(String email, String password)
+    {
+
+        SQLiteDatabase sqLiteDatabase = this.getReadableDatabase();
+        Cursor cursor = sqLiteDatabase.rawQuery("SELECT * FROM register1 WHERE email = '' "+email+" AND password ='' "+password +" ",null);
+        if(cursor.moveToFirst())
+        {
+            loggedin = true;
+        }   else {
+            loggedin = false;
+        }
+        return loggedin;
     }
 }
