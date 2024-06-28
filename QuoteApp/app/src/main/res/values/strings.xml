@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">QuoteApp</string>
+    <string name="loading_quote">Loading quote…</string>
+    <string name="button_refresh">Refresh</string>
+</resources>
