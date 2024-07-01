@@ -31,6 +31,7 @@ public class MainActivity extends AppCompatActivity {
     private Calendar calendar;
     private AlarmManager alarmManager;
     private PendingIntent pendingIntent;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -53,65 +54,67 @@ public class MainActivity extends AppCompatActivity {
                     .setTitleText("Select Alarm Time")
                     .build();
 
-            timePicker.show(getSupportFragmentManager(),"androidknowledge");
+            timePicker.show(getSupportFragmentManager(), "androidknowledge");
             timePicker.addOnPositiveButtonClickListener(new View.OnClickListener() {
                 @SuppressLint({"SetTextI18n", "DefaultLocale"})
                 @Override
                 public void onClick(View view) {
-                    if(timePicker.getHour()>12)
-                    {
+                    if (timePicker.getHour() > 12) {
                         binding.selectTime.setText(
-                                String.format("%02d",(timePicker.getHour()-12))+":"+String.format("%02d",timePicker.getMinute())+ "pm"
+                                String.format("%02d", (timePicker.getHour() - 12)) + ":" + String.format("%02d", timePicker.getMinute()) + "pm"
                         );
-                    }   else {
+                    } else {
                         binding.selectTime.setText(
-                                timePicker.getHour()+":"+timePicker.getMinute()+"am");
+                                timePicker.getHour() + ":" + timePicker.getMinute() + "am");
                     }
 
-                    calendar =Calendar.getInstance();
+                    calendar = Calendar.getInstance();
                     calendar.set(Calendar.HOUR_OF_DAY, timePicker.getHour());
                     calendar.set(Calendar.MINUTE, timePicker.getMinute());
-                    calendar.set(Calendar.SECOND,0);
-                    calendar.set(Calendar.MILLISECOND,0);
+                    calendar.set(Calendar.SECOND, 0);
+                    calendar.set(Calendar.MILLISECOND, 0);
                 }
             });
         });
 
         binding.setAlarm.setOnClickListener(view -> {
-            alarmManager = (AlarmManager) getSystemService(Context.ALARM_SERVICE);
-            Intent intent = new Intent(MainActivity.this,AlarmReceiver.class);
-            pendingIntent = PendingIntent.getBroadcast(MainActivity.this,0,intent, PendingIntent.FLAG_IMMUTABLE);
+            if (calendar == null) {
+                Toast.makeText(MainActivity.this, "Please select a time first", Toast.LENGTH_SHORT).show();
+                return;
+            }
 
-            alarmManager.setInexactRepeating(AlarmManager.RTC_WAKEUP,calendar.getTimeInMillis(), AlarmManager.INTERVAL_DAY,pendingIntent);
+            alarmManager = (AlarmManager) getSystemService(Context.ALARM_SERVICE);
+            Intent intent = new Intent(MainActivity.this, AlarmReceiver.class);
+            pendingIntent = PendingIntent.getBroadcast(MainActivity.this, 0, intent, PendingIntent.FLAG_UPDATE_CURRENT | PendingIntent.FLAG_IMMUTABLE);
+
+            alarmManager.setInexactRepeating(AlarmManager.RTC_WAKEUP, calendar.getTimeInMillis(), AlarmManager.INTERVAL_DAY, pendingIntent);
             Toast.makeText(MainActivity.this, "Alarm Set", Toast.LENGTH_SHORT).show();
         });
-        binding.cancelAlarm.setOnClickListener(view -> {
-            Intent intent = new Intent(MainActivity.this,AlarmReceiver.class);
-            pendingIntent = PendingIntent.getBroadcast(MainActivity.this,0,intent, PendingIntent.FLAG_IMMUTABLE);
-            if(alarmManager == null)
-            {
-                alarmManager = (AlarmManager) getSystemService(Context.ALARM_SERVICE);
-            } alarmManager.cancel(pendingIntent);
 
-            Toast.makeText(MainActivity.this, "alarm Cancelled", Toast.LENGTH_SHORT).show();
+        binding.cancelAlarm.setOnClickListener(view -> {
+            Intent intent = new Intent(MainActivity.this, AlarmReceiver.class);
+            pendingIntent = PendingIntent.getBroadcast(MainActivity.this, 0, intent, PendingIntent.FLAG_UPDATE_CURRENT | PendingIntent.FLAG_IMMUTABLE);
+            if (alarmManager == null) {
+                alarmManager = (AlarmManager) getSystemService(Context.ALARM_SERVICE);
+            }
+            alarmManager.cancel(pendingIntent);
+
+            Toast.makeText(MainActivity.this, "Alarm Cancelled", Toast.LENGTH_SHORT).show();
         });
     }
 
     @SuppressLint("ObsoleteSdkInt")
-    private void createNotificationChannel()
-    {
-        if(Build.VERSION.SDK_INT >= Build.VERSION_CODES.ECLAIR_0_1)
-        {
-            CharSequence name = "vkchannel";
+    private void createNotificationChannel() {
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) { // Updated to correct version check
+            CharSequence name = "vk_channel";
             String desc = "channel for Alarm Manager";
             int imp = NotificationManager.IMPORTANCE_HIGH;
-            NotificationChannel channel = new NotificationChannel("androidknowledge",name,imp);
+            NotificationChannel channel = new NotificationChannel("android_knowledge", name, imp);
             channel.setDescription(desc);
 
             NotificationManager notificationManager = getSystemService(NotificationManager.class);
             notificationManager.createNotificationChannel(channel);
-
-
         }
     }
 }
+
