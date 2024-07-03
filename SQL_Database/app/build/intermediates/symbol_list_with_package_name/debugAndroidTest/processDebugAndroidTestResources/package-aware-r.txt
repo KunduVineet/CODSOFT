@@ -1,3 +1,0 @@
-com.teeniv.sql_database.test
-style WhiteBackgroundDialogTheme
-style WhiteBackgroundTheme

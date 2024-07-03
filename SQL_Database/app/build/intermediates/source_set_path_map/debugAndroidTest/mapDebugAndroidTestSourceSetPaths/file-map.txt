@@ -1,6 +1,0 @@
-com.teeniv.sql_database.test.app-annotation-experimental-1.4.0-0 C:\Users\kundu\.gradle\caches\transforms-4\91c26fe8bf1672e55f73e96a79570b14\transformed\annotation-experimental-1.4.0\res
-com.teeniv.sql_database.test.app-core-1.5.0-1 C:\Users\kundu\.gradle\caches\transforms-4\c23cf04ed92b9e9e8a0aff14fbb4ba04\transformed\core-1.5.0\res
-com.teeniv.sql_database.test.app-androidTest-2 C:\Users\kundu\AndroidStudioProjects\SQL_Database\app\build\generated\res\resValues\androidTest\debug
-com.teeniv.sql_database.test.app-mergeDebugAndroidTestResources-3 C:\Users\kundu\AndroidStudioProjects\SQL_Database\app\build\intermediates\incremental\debugAndroidTest\mergeDebugAndroidTestResources\merged.dir
-com.teeniv.sql_database.test.app-mergeDebugAndroidTestResources-4 C:\Users\kundu\AndroidStudioProjects\SQL_Database\app\build\intermediates\incremental\debugAndroidTest\mergeDebugAndroidTestResources\stripped.dir
-com.teeniv.sql_database.test.app-debugAndroidTest-5 C:\Users\kundu\AndroidStudioProjects\SQL_Database\app\build\intermediates\merged_res\debugAndroidTest\mergeDebugAndroidTestResources
