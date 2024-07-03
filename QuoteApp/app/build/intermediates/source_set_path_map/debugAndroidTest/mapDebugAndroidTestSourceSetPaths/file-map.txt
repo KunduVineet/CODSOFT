@@ -1,0 +1,6 @@
+com.teeniv.quoteapp.test.app-annotation-experimental-1.4.0-0 C:\Users\kundu\.gradle\caches\transforms-4\25ce579ab7e5f53dedf6a1cd2235c702\transformed\annotation-experimental-1.4.0\res
+com.teeniv.quoteapp.test.app-core-1.5.0-1 C:\Users\kundu\.gradle\caches\transforms-4\a6ef97b5288fabdf2a4ce43c04f96052\transformed\core-1.5.0\res
+com.teeniv.quoteapp.test.app-androidTest-2 C:\Users\kundu\AndroidStudioProjects\QuoteApp\app\build\generated\res\resValues\androidTest\debug
+com.teeniv.quoteapp.test.app-mergeDebugAndroidTestResources-3 C:\Users\kundu\AndroidStudioProjects\QuoteApp\app\build\intermediates\incremental\debugAndroidTest\mergeDebugAndroidTestResources\merged.dir
+com.teeniv.quoteapp.test.app-mergeDebugAndroidTestResources-4 C:\Users\kundu\AndroidStudioProjects\QuoteApp\app\build\intermediates\incremental\debugAndroidTest\mergeDebugAndroidTestResources\stripped.dir
+com.teeniv.quoteapp.test.app-debugAndroidTest-5 C:\Users\kundu\AndroidStudioProjects\QuoteApp\app\build\intermediates\merged_res\debugAndroidTest\mergeDebugAndroidTestResources

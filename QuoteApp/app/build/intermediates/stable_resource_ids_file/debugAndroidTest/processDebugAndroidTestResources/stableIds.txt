@@ -1,0 +1,2 @@
+com.teeniv.quoteapp.test:style/WhiteBackgroundTheme = 0x7f010001
+com.teeniv.quoteapp.test:style/WhiteBackgroundDialogTheme = 0x7f010000

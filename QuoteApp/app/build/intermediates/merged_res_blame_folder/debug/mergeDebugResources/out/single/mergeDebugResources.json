@@ -1,0 +1,86 @@
+[
+    {
+        "merged": "com.teeniv.quoteapp-debug-31:/mipmap-xxhdpi_ic_launcher.webp.flat",
+        "source": "com.teeniv.quoteapp-main-33:/mipmap-xxhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.teeniv.quoteapp-debug-31:/mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "com.teeniv.quoteapp-main-33:/mipmap-xxxhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.teeniv.quoteapp-debug-31:/mipmap-mdpi_ic_launcher_round.webp.flat",
+        "source": "com.teeniv.quoteapp-main-33:/mipmap-mdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.teeniv.quoteapp-debug-31:/mipmap-anydpi_ic_launcher.xml.flat",
+        "source": "com.teeniv.quoteapp-main-33:/mipmap-anydpi/ic_launcher.xml"
+    },
+    {
+        "merged": "com.teeniv.quoteapp-debug-31:/drawable_ic_launcher_foreground.xml.flat",
+        "source": "com.teeniv.quoteapp-main-33:/drawable/ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "com.teeniv.quoteapp-debug-31:/mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "com.teeniv.quoteapp-main-33:/mipmap-mdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.teeniv.quoteapp-debug-31:/layout_activity_main.xml.flat",
+        "source": "com.teeniv.quoteapp-main-33:/layout/activity_main.xml"
+    },
+    {
+        "merged": "com.teeniv.quoteapp-debug-31:/mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "com.teeniv.quoteapp-main-33:/mipmap-xhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.teeniv.quoteapp-debug-31:/drawable_ic_launcher_background.xml.flat",
+        "source": "com.teeniv.quoteapp-main-33:/drawable/ic_launcher_background.xml"
+    },
+    {
+        "merged": "com.teeniv.quoteapp-debug-31:/mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "com.teeniv.quoteapp-main-33:/mipmap-xhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.teeniv.quoteapp-debug-31:/drawable_img.png.flat",
+        "source": "com.teeniv.quoteapp-main-33:/drawable/img.png"
+    },
+    {
+        "merged": "com.teeniv.quoteapp-debug-31:/mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "com.teeniv.quoteapp-main-33:/mipmap-hdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.teeniv.quoteapp-debug-31:/mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "com.teeniv.quoteapp-main-33:/mipmap-hdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.teeniv.quoteapp-debug-31:/mipmap-xxxhdpi_ic_launcher.webp.flat",
+        "source": "com.teeniv.quoteapp-main-33:/mipmap-xxxhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.teeniv.quoteapp-debug-31:/mipmap-anydpi_ic_launcher_round.xml.flat",
+        "source": "com.teeniv.quoteapp-main-33:/mipmap-anydpi/ic_launcher_round.xml"
+    },
+    {
+        "merged": "com.teeniv.quoteapp-debug-31:/mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "com.teeniv.quoteapp-main-33:/mipmap-xxhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.teeniv.quoteapp-debug-31:/xml_backup_rules.xml.flat",
+        "source": "com.teeniv.quoteapp-main-33:/xml/backup_rules.xml"
+    },
+    {
+        "merged": "com.teeniv.quoteapp-debug-31:/font_halant_bold.xml.flat",
+        "source": "com.teeniv.quoteapp-main-33:/font/halant_bold.xml"
+    },
+    {
+        "merged": "com.teeniv.quoteapp-debug-31:/xml_data_extraction_rules.xml.flat",
+        "source": "com.teeniv.quoteapp-main-33:/xml/data_extraction_rules.xml"
+    },
+    {
+        "merged": "com.teeniv.quoteapp-debug-31:/drawable_share.xml.flat",
+        "source": "com.teeniv.quoteapp-main-33:/drawable/share.xml"
+    },
+    {
+        "merged": "com.teeniv.quoteapp-debug-31:/drawable_txt1_bg.xml.flat",
+        "source": "com.teeniv.quoteapp-main-33:/drawable/txt1_bg.xml"
+    }
+]

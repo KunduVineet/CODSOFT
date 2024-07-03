@@ -1,0 +1,3 @@
+com.teeniv.quoteapp.test
+style WhiteBackgroundDialogTheme
+style WhiteBackgroundTheme
